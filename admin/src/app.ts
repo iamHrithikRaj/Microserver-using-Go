@@ -81,4 +81,6 @@ createConnection().then((db) => {
       });
     }
   );
-});
+}).catch((error)=>{
+  console.log("Error: " + error.message)
+} );

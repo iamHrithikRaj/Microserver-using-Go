@@ -60,7 +60,7 @@ createConnection().then((db) => {
             console.log("product updated");
           },
           { noAck: true }
-        );
+        ); 
 
         channel.consume(
           "product_deleted",
@@ -102,3 +102,5 @@ createConnection().then((db) => {
     }
   );
 });
+
+
